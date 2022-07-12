@@ -17,18 +17,18 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "11176079"))
+API_HASH = getenv("API_HASH", "32ed7c73956e2f40a2efa7fd5eb1fdae"))
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5116713468:AAGiwKsTum_V0sEtTgs0fCc4TK1wdJVPkJk"))
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 if MONGO_DB_URI != None:
     MONGO_DB_URI = MONGO_DB_URI.strip()
-if MONGO_DB_URI == "":
+if MONGO_DB_URI == "mongodb+srv://Essllaamg:Essllaamg@cluster0.mb9liv5.mongodb.net/?retryWrites=true&w=majority":
     MONGO_DB_URI = None
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
@@ -42,14 +42,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001732431169"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","SiestaXMusic")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","Loli")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "1375913465").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -159,7 +159,7 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/e17f42bc195635b668d6d.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph//file/5397cc6f94710eaf990bb.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
